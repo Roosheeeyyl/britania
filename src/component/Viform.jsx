@@ -152,15 +152,14 @@ export default function Viform() {
                 className="mx-3 text-white bg-cyan-900 hover:bg-emerald-500 focus:ring-4 focus:outline-none focus:ring-blue-500 font-medium rounded-lg text-sm w-full sm:w-auto px-7 py-2.5 text-center dark:bg-blue-500 dark:hover:bg-blue-900 dark:focus:ring-blue-500 print:hidden right-10" 
                 onClick={getData}>GetData</button>
                 <br/><br/>
-                </div>
+               
                 <div>
               
-                
                 <button type="Update"
                 className="mx-3 text-white bg-cyan-900 hover:bg-emerald-500 focus:ring-4 focus:outline-none focus:ring-emerald-200 font-medium rounded-lg text-sm w-full sm:w-auto px-7 py-2.5 text-center dark:bg-blue-500 dark:hover:bg-blue-900 dark:focus:ring-blue-500 print:hidden right-10" 
                 onClick={(fieldToEdit) => updateField(id)}>Update</button>
             </div>
-        
+             </div>
         </div>
         </div>
 
@@ -182,7 +181,7 @@ export default function Viform() {
                                         return (
                                            
                                                 <tr className="border-b " key={data.id}>
-                                                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-black dark:bg-emerald-200">{data.id}</td>
+                                                    <td className="px-5 py-2.5 whitespace-nowrap text-sm font-medium text-black dark:bg-emerald-200">{data.id}</td>
                                                     <td className="text-lg text-black bg-black dark:bg-emerald-200 font-medium px-6 py-4 whitespace-nowrap">{data.Name}</td>
                                                     <td className="text-lg text-black bg-black dark:bg-emerald-200 font-medium px-6 py-4 whitespace-nowrap">{data.Email}</td>
                                                     <td className="text-lg text-black bg-black dark:bg-emerald-200 font-medium px-6 py-4 whitespace-nowrap">{data.Skill}</td>
@@ -190,12 +189,12 @@ export default function Viform() {
                                                     <button type='Delete'
                 className="ml-16 mr-6 mt-4 text-white bg-cyan-900 hover:bg-emerald-500 focus:ring-4 focus:outline-none focus:ring-emerald-200 font-medium rounded-lg text-sm w-full sm:w-auto px-7 py-2.5 text-center dark:bg-blue-500 dark:hover:bg-blue-900 dark:focus:ring-blue-500 print:hidden right-10"
                 onClick={() => handleDelete(data.id)} >Delete</button><button type='Delete'
-                className="ml-16 mr-6 mt-4
+                className="  ml-16 mr-10 mt-4
                  text-white bg-cyan-900
                   hover:bg-emerald-500 focus:ring-4
                    focus:outline-none focus:ring-emerald-200
                     font-medium rounded-lg text-sm w-full 
-                    sm:w-auto px-7 py-2.5 text-center
+                    sm:w-auto px-6 py-2.5 text-center
                      dark:bg-blue-500 dark:hover:bg-blue-900
                       dark:focus:ring-blue-500 print:hidden
                        right-10"
