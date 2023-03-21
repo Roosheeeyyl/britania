@@ -6,7 +6,7 @@ function App() {
 
 
   return (
-    <div className="m-auto bg-fixed bg-cover bg-center bg-[url('./bg-photo/rm422-076-x.jpg')]">
+    <div className="m-auto bg-fixed bg-cover bg-center bg-[url('./bg-photo/brits.jpg')]">
       <Viform /> 
     </div>
   )

@@ -16,13 +16,15 @@ export default function Viform() {
     const [Skill, setSkill] = useState('');
     const [fireData, setFireData] = useState([]);
    
-    const databaseReference = collection(database, 'utro');
+    const databaseReference = collection(database, 'softwareengineers');
 
     const handleDelete = async (id) => {
         try {
           console.log('Deleting document with id', id);
+          alert("Are u sure u wan't to Delete?");
           await deleteDoc(doc(databaseReference, id)); 
           console.log('Document with id', id, 'successfully deleted!');
+          alert("successfully deleted!");
         getData();
         } catch (error) {
           console.error('Error deleting document:', error);
@@ -31,8 +33,8 @@ export default function Viform() {
       };
     
     const addData = () => {
-      if(Name == "" && Skill == "" && Email == ""){
-          alert("Please input")
+     if(Name == "" && Skill == "" && Email == ""){
+          
       }else{
         addDoc(databaseReference, {
           Name: Name,
